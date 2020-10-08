@@ -20,6 +20,7 @@
     <junit.version>4.12</junit.version>
     <junit.dataprovider.version>2.4</junit.dataprovider.version>
     <jackson.databind.version>2.9.8</jackson.databind.version>
+    <jsonschemavalidator.version>4.3.1</jsonschemavalidator.version>
   </properties>
 
   <dependencies>
@@ -39,6 +40,12 @@
       <groupId>com.tngtech.junit.dataprovider</groupId>
       <artifactId>junit4-dataprovider</artifactId>
       <version>${junit.dataprovider.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>${jsonschemavalidator.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

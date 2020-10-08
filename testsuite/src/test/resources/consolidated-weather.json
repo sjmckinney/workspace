@@ -1,0 +1,299 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1602157747.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"consolidated_weather",
+		"time",
+		"sun_rise",
+		"sun_set",
+		"timezone_name",
+		"parent",
+		"sources",
+		"title",
+		"location_type",
+		"woeid",
+		"latt_long",
+		"timezone"
+	],
+	"properties": {
+		"consolidated_weather": {
+			"$id": "#root/consolidated_weather", 
+			"title": "Consolidated_weather", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/consolidated_weather/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"weather_state_name",
+					"weather_state_abbr",
+					"wind_direction_compass",
+					"created",
+					"applicable_date",
+					"min_temp",
+					"max_temp",
+					"the_temp",
+					"wind_speed",
+					"wind_direction",
+					"air_pressure",
+					"humidity",
+					"visibility",
+					"predictability"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/consolidated_weather/items/id", 
+						"title": "Id", 
+						"type": "integer",
+						"default": 0
+					},
+					"weather_state_name": {
+						"$id": "#root/consolidated_weather/items/weather_state_name", 
+						"title": "Weather_state_name", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"weather_state_abbr": {
+						"$id": "#root/consolidated_weather/items/weather_state_abbr", 
+						"title": "Weather_state_abbr", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"wind_direction_compass": {
+						"$id": "#root/consolidated_weather/items/wind_direction_compass", 
+						"title": "Wind_direction_compass", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"created": {
+						"$id": "#root/consolidated_weather/items/created", 
+						"title": "Created", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"applicable_date": {
+						"$id": "#root/consolidated_weather/items/applicable_date", 
+						"title": "Applicable_date", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"min_temp": {
+						"$id": "#root/consolidated_weather/items/min_temp", 
+						"title": "Min_temp", 
+						"type": "number",
+						"default": 0.0
+					},
+					"max_temp": {
+						"$id": "#root/consolidated_weather/items/max_temp", 
+						"title": "Max_temp", 
+						"type": "number",
+						"default": 0.0
+					},
+					"the_temp": {
+						"$id": "#root/consolidated_weather/items/the_temp", 
+						"title": "The_temp", 
+						"type": "number",
+						"default": 0.0
+					},
+					"wind_speed": {
+						"$id": "#root/consolidated_weather/items/wind_speed", 
+						"title": "Wind_speed", 
+						"type": "number",
+						"default": 0.0
+					},
+					"wind_direction": {
+						"$id": "#root/consolidated_weather/items/wind_direction", 
+						"title": "Wind_direction", 
+						"type": "number",
+						"default": 0.0
+					},
+					"air_pressure": {
+						"$id": "#root/consolidated_weather/items/air_pressure", 
+						"title": "Air_pressure", 
+						"type": "number",
+						"default": 0.0
+					},
+					"humidity": {
+						"$id": "#root/consolidated_weather/items/humidity", 
+						"title": "Humidity", 
+						"type": "integer",
+						"default": 0
+					},
+					"visibility": {
+						"$id": "#root/consolidated_weather/items/visibility", 
+						"title": "Visibility", 
+						"type": "number",
+						"default": 0.0
+					},
+					"predictability": {
+						"$id": "#root/consolidated_weather/items/predictability", 
+						"title": "Predictability", 
+						"type": "integer",
+						"default": 0
+					}
+				}
+			}
+
+		},
+		"time": {
+			"$id": "#root/time", 
+			"title": "Time", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"sun_rise": {
+			"$id": "#root/sun_rise", 
+			"title": "Sun_rise", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"sun_set": {
+			"$id": "#root/sun_set", 
+			"title": "Sun_set", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"timezone_name": {
+			"$id": "#root/timezone_name", 
+			"title": "Timezone_name", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"parent": {
+			"$id": "#root/parent", 
+			"title": "Parent", 
+			"type": "object",
+			"required": [
+				"title",
+				"location_type",
+				"woeid",
+				"latt_long"
+			],
+			"properties": {
+				"title": {
+					"$id": "#root/parent/title", 
+					"title": "Title", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"location_type": {
+					"$id": "#root/parent/location_type", 
+					"title": "Location_type", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"woeid": {
+					"$id": "#root/parent/woeid", 
+					"title": "Woeid", 
+					"type": "integer",
+					"default": 0
+				},
+				"latt_long": {
+					"$id": "#root/parent/latt_long", 
+					"title": "Latt_long", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"sources": {
+			"$id": "#root/sources", 
+			"title": "Sources", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/sources/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"title",
+					"slug",
+					"url",
+					"crawl_rate"
+				],
+				"properties": {
+					"title": {
+						"$id": "#root/sources/items/title", 
+						"title": "Title", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"slug": {
+						"$id": "#root/sources/items/slug", 
+						"title": "Slug", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"url": {
+						"$id": "#root/sources/items/url", 
+						"title": "Url", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"crawl_rate": {
+						"$id": "#root/sources/items/crawl_rate", 
+						"title": "Crawl_rate", 
+						"type": "integer",
+						"default": 0
+					}
+				}
+			}
+
+		},
+		"title": {
+			"$id": "#root/title", 
+			"title": "Title", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"location_type": {
+			"$id": "#root/location_type", 
+			"title": "Location_type", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"woeid": {
+			"$id": "#root/woeid", 
+			"title": "Woeid", 
+			"type": "integer",
+			"default": 0
+		},
+		"latt_long": {
+			"$id": "#root/latt_long", 
+			"title": "Latt_long", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"timezone": {
+			"$id": "#root/timezone", 
+			"title": "Timezone", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		}
+	}
+}

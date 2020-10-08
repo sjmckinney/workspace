@@ -49,3 +49,5 @@ testsuite/target/**
 testsuite/.classpath
 testsuite/.project
 testsuite/.settings/**
+.DS_Store
+.vscode/launch.json
