@@ -1,21 +1,20 @@
-package utils;
+package com.metaweather.utils;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 import java.time.format.DateTimeFormatter;
 
-public static class DateCalculator
+public class DateCalculator
 {
-    public string CalculateDateWithOffset(TimeFrame offset)
+    public static String CalculateDateWithOffset(TimeFrame offset)
     {
-        String dateWithOffset;
+        String dateWithOffset = "";
         
         try {
-            LocalDate date = LocalDate.now().plusDays(2);
+            LocalDate date = LocalDate.now().plusDays(offset.value);
             DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy/MM/dd");
             dateWithOffset = dateFormat.format(date);
         } catch (Exception e) {
-            System.out.println("{}" + e.message);
+            System.out.println("{}" + e.getMessage());
         }
         return dateWithOffset;
     }
